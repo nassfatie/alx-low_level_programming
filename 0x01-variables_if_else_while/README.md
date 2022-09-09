@@ -1,0 +1,2 @@
+Variables are storage containers 
+
