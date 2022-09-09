@@ -2,12 +2,12 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * Main-Determine if the number is positive or negative.
+ * main - Determine if the number is positive, negative or zero.
  *
- * Return 0:
+ * Return: Always 0
  */
-int main(void)
-{
+ int main(void)
+ {
 	int n;
 
 	srand(time(0));
@@ -24,5 +24,5 @@ int main(void)
 	{
 		printf("%d is negative\n",n);
 	}
-	return 0;
+	return (0):
 }
