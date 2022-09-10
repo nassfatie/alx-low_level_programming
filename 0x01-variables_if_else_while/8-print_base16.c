@@ -9,13 +9,15 @@ int main(void)
 
 	int x;
 
-	for (x = 48; x < 57; x++)
+	char y;
+
+	for (x = 48; x <= 57; x++)
 	{
 		putchar(x);
 	}
-	for (x = 97; x < 102; x++)
+	for (y = 97; y <= 102; y++)
 	{
-		putchar(x);
+		putchar(y);
 	}
 	putchar('\n');
 	return (0);
