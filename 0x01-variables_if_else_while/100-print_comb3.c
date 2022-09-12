@@ -1,32 +1,36 @@
 #include <stdio.h>
 
 /**
- *main - Entry point.
- *
- *Return: Always 0
- */
+*main - Entry point.
+*
+*Return: Always 0
+*/
 int main(void)
 {
 	int x, y;
 
-	for (x = 10; x <= 19; x++)
+	x = 48;
+	y = 48;
+
+	while (y < 58)
 	{
-		for (y = 10; y <= 19; y++)
+		x = 48;
+		while (x < 58)
 		{
-			if ((x % 10) > (y % 10))
+			if (y != x && y < x)
 			{
-			putchar((x % 10) + '0');
-			putchar((y % 10) + '0');
-			if (x != 18 || y != 19)
-			{
-
+				putchar(y);
+				putchar(x);
+				if (x == 57 && y == 56)
+				{
+					break;
+				}
+				putchar(',');
+				putchar(' ');
 			}
-			putchar(',');
-			putchar(' ');
-
-			}
+			x++;
 		}
-
+		y++;
 	}
 	putchar('\n');
 	return (0);
