@@ -13,16 +13,18 @@ int main(void)
 	{
 		for (y = 10; y <= 19; y++)
 		{
-
+			if ((x % 10) > (y % 10))
+			{
 			putchar((x % 10) + '0');
 			putchar((y % 10) + '0');
-			if (x != 19 || y != 19)
+			if (x != 18 || y != 19)
 			{
 
 			}
 			putchar(',');
 			putchar(' ');
 
+			}
 		}
 
 	}
