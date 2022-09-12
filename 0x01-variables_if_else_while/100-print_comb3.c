@@ -9,12 +9,12 @@ int main(void)
 {
 	int x, y;
 
-	x = 47;
-	y = 47;
+	x = 48;
+	y = 48;
 
 	while (y < 58)
 	{
-		x = 47;
+		x = 48;
 		while (x < 58)
 		{
 			putchar(x);
