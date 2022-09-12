@@ -9,25 +9,22 @@ int main(void)
 {
 	int x, y;
 
-	x = 48;
-	y = 48;
-
-	while (y < 58)
+	for (x = 10; x <= 19; x++)
 	{
-		x = 48;
-		while (x < 58)
+		for (y = 10; y <= 19; y++)
 		{
-			putchar(x);
-			putchar(y);
-			if (x == 58 && y == 58)
+
+			putchar((x % 10) + '0');
+			putchar((y % 10) + '0');
+			if (x != 19 || y != 19)
 			{
-				break;
+
 			}
 			putchar(',');
 			putchar(' ');
-			x++;
+
 		}
-		y++;
+
 	}
 	putchar('\n');
 	return (0);
