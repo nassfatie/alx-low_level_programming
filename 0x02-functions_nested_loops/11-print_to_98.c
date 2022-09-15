@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-*print_to_98 - Prints natural numbers
+*entry - Prints natural numbers
 *@n: input number
 *
 *
@@ -8,15 +8,21 @@
 */
 void print_to_98(int n)
 {
-	for (n = 0; n < 98; n++)
-
+	if (n < 98)
 	{
+		for (; n < 98; n++)
+
+		{
 		printf("%d, ", n);
+		}
 	}
 
-	for (n = 0; n > 98; n--)
+	else if (n > 98)
 	{
+		for (; n > 98; n--)
+		{
 		printf("%d, ", n);
+		}
 	}
 	printf("%d\n", n);
 }
