@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-*entry - Prints natural numbers
+*print_to_98 - Prints all natural numbers
 *@n: input number
 *
 *
