@@ -1,26 +1,19 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
-*_strpbrk - finds string
-*@s: string to find stuff
-*@accept: accepting arrays
-*
-*Return: returns new value
+*_memset -  memory with constant byte
+*@n:number of bytes
+*@s:string
+*@b:consant byte
+*Return: string
 */
-char *_strpbrk(char *s, char *accept)
+char *_memset(char *s, char b, unsigned int n)
 {
-	int i;
-	int j;
+	unsigned int i;
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (i = 0; i < n; i++)
 	{
-	for (j = 0; accept[j] != '\0'; j++)
-	{
-	if (s[i] == accept[j])
-	{
-	return (s + i);
+		s[i] = b;
 	}
-	}
-	}
-	return (0);
+	return (s);
 }
